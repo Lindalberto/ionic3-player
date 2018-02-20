@@ -7,16 +7,13 @@
 </ion-header>
 
 <ion-content padding>
-  <div class="qqcoisa">
-    <video id="video"
-           #videoPlayer
-           width="100%"
-           height="auto"
-           src="https://videoaulas.infra.grancursosonline.com.br/564afe295161b94c3dcc76ab8ec071b3/eab5ebae49838bfc0226ada30231e6bc/eab5ebae49838bfc0226ada30231e6bc.mp4" controls="true">
-    </video>
-  </div>
-  <div class="qqcoisa">
-    <canvas id="c1" #canvas1 width="100%" height="auto"></canvas>
-    <canvas id="c2" #canvas2 width="100%" height="auto"></canvas>
-  </div>
+  <video id="video"
+         #videoPlayer
+         width="100%"
+         height="auto"
+         controls="true">
+  </video>
+
+  <canvas id="c1" (click)="resize()" #canvas1 style="display: block;"></canvas>
+
 </ion-content>
